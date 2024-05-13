@@ -4,6 +4,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh '''
+                    whoami
                     docker build -t sensemate-bootcamp-sample .
                 '''
             }
