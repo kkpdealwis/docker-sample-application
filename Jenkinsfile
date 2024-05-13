@@ -1,5 +1,5 @@
 pipeline {
-    agent jenkins-pi
+    agent { label 'jenkins-pi' }
 
     stages{
         stage('Build Docker Image') {
