@@ -3,7 +3,7 @@ pipeline {
 
     stages{
         stage('Build Docker Image') {
-            step{
+            steps {
                 sh '''
                     docker build -t sensemate-bootcamp-sample .
                 '''
